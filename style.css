@@ -4,6 +4,22 @@ body {
     padding-bottom: 100px;
 }
 
+.subhead {
+	background-color: lightslategray;
+	height: 100px;
+    line-height: 100px;
+    clear: both;
+    text-align: center;
+    /* font-size: px; */
+    margin-right: 0px;
+    padding-right:0px;
+    /* margin-top: 100px; */
+}
+.block {
+    height: 129px;
+    visibility: hidden;
+}
+
 text {
     cursor: text;
 }
@@ -20,13 +36,6 @@ a:hover {
 }
 .fixed-header{
     top: 0;
-}
-.subhead {
-	background-color: lightslategray;
-	height: 100px;
-    line-height: 100px;
-    clear: both;
-    text-align: center;
 }
 .fixed-footer{
     bottom: 0;
@@ -71,10 +80,6 @@ nav a{
     width:auto;
     margin-left: 20px;
 }
-.block {
-    height: 129px;
-    visiblity: hidden;
-}
 .container{
     width: 90%;
     margin: 0 auto;
@@ -92,4 +97,65 @@ nav a{
     float: left;
     position: relative;
     bottom: 400px;
+    }
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    display: none;
+    }
+    
+    .topnav #myLinks {
+    display: none;
+    }
+    
+.topnav a {
+    color: yellow;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+    
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    
+.topnav a:hover {
+    background-color: yellow;
+    color: black;
+    }
+    
+.active {
+    background-color: #560;
+    color: white;
+    }
+
+    @media (max-width: 800px){
+        .topnav {
+            display: block;
+        }
+        .fixed-header {
+            display: none;
+        }
+        .fixed-footer {
+            display: none;
+        }
+        .block {
+            height: 0px;
+            display: none;
+        }
+        .subhead {
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }   
+    
     }
