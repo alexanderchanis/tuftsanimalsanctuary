@@ -5,7 +5,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Testimonials</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
     <script src='main.js'></script>
     
     <style>
@@ -26,10 +28,10 @@
         h1 {
             font-size: 50px;
             text-align: center;
-            color: white;
+            color: gold
         }
 
-        div {
+        .text {
             /* opacity: 0.3; */
             padding: 10px;
             width: 35%;
@@ -56,36 +58,148 @@
             background-color: rbga(0,0,0,0);
             visibility: hidden;
         }
+        @media (max-width: 800px){
+            div {
+                width: 100%;
+            }
+            #one {
+                width: 100%;
+                /* width: 100%; max-width: 500px; */
+                margin: auto;
+                margin-bottom: 10px;
+                background: rgb(143, 165, 47);
+            }
+            #two {
+                width: 100%;
+                /* width: 100%; max-width: 500px; */
+                margin: 0;
+                margin-bottom: 10px;
+                color: black;
+                background: rgb(143, 165, 47);
+            }
+            #three {
+                width: 100%;
+                /* width: 100%; max-width: 500px; */
+                margin: 0;
+                margin-bottom: 10px;
+                background: rgb(143, 165, 47);
+            }
+            #hide1 {
+                display: none;
+            }
+            #hide2 {
+                display: none;
+            }
+            body {
+                background: lightblue;
+                color: black;
+            }
+            h2 {
+            color: yellow;
+            font-size: 25px;
+            }
+            p {
+            padding: 20px;
+            font-size: 18px;
+            color: yellow
+        }
+            .subhead {
+            /* width: 100%; */
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .subhead h1 {
+            display: inline-block;
+            margin: 0;
+            text-align: center;
+            font-size: 50px;
+
+        }
+    }
     </style>
 </head>
-<body>
-    <h1>Testimonials</h1>
-    <div style="float: left">
-        <h2>Would definetely come back!</h2>
+<body style="margin:0;padding:0;"!important>
+    <div class="fixed-header">
+        <div style="font-size:20px; margin-left: 20px"><h3>Tufts Animal Sanctuary</h3></div>
+        <a href="index.html"><img src="logo.png" class="mainlogo"></a>
+        <div class="container">
+            <nav style="font-size:18px">
+                <a href="#">Home</a>
+                <a href="#" target=”_blank”>Contact us</a>
+                <a href="#" target=”_blank”>Mission Statement</a>
+                <a href="#" target=”_blank”>Animals</a>
+                <a href="#" target=”_blank”>Staff</a>
+                <a href="#" target=”_blank”>Features</a>
+                <a href="#" target=”_blank”>Testimonials</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="topnav">
+        <div class = "font2">
+            <a href="index.html" class="active">Home</a>
+        </div>
+        <!-- <a href="index.html"><img src="logo.png" class="mainlogo"></a> -->
+        <div id="myLinks">
+            <!-- <a href="index.html">Home</a> -->
+            <a href="contact.html" target=”_blank”>Contact us</a>
+            <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
+            <a href="rescues.html" target=”_blank”>Animals</a>
+            <a href="team.html" target=”_blank”>Staff</a>
+            <a href="services.html" target=”_blank”>Features</a>
+            <a href="Testimonials.html" target=”_blank”>Testimonials</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div style="padding-left:16px">
+    </div>
+    <div class = "block"></div>
+    <div class = "subhead">
+        <h1 class = "font1" style="font-size: 50px">Testimonials</h1>
+    </div>
+    <div class = "text" id = "one" style="float: left">
+        <h2 class = "font2">Would definetely come back!</h2>
         <hr>
-        <p>Posted: Janurary 28, 2022</p>
-        <p>My family and I took a tour of the park and went on the ___ trail. We loved it and 
+        <p class = "font4">Posted: Janurary 28, 2022</p>
+        <p class = "font4">My family and I took a tour of the park and went on the Heartwood trail. We loved it and 
             we can't wait to come back.
         </p>
     </div>
-    <div class = "hide" style="float: left">
+    <div id = "hide1" class = "hide" style="float: left">
     </div>
-    <div style="float: right">
-        <h2>Great Experience!</h2>
+    <div class = "text" id = "two" style="float: right">
+        <h2 class = "font2">Great Experience!</h2>
         <hr>
-        <p>Posted: December 20, 2021</p>
-        <p>My kids loved all of the animal exhibits, especially the elephants and lions. 
+        <p class = "font4">Posted: December 20, 2021</p>
+        <p class = "font4">My kids loved all of the animal exhibits, especially the elephants and lions. 
         </p>
     </div>
-    <div class = "hide" style="float: right; height: 20px">
+    <div id = "hide2" class = "hide" style="float: right; height: 20px">
     </div>
-    <div style="float: left">
-        <h2>Best Tours!</h2>
+    <div class = "text" id = "three" style="float: left; margin-bottom: 100px;">
+        <h2 class = "font2">Best Tours!</h2>
         <hr>
-        <p>Posted: December 3, 2021</p>
-        <p>My fiancee and I had a great experience on the bus tour with Alex the tour guide. He took us to all the best places
+        <p class = "font4">Posted: December 3, 2021</p>
+        <p class = "font4">My fiancee and I had a great experience on the bus tour with Alex the tour guide. He took us to all the best places
             in the park including the various exhibits.
         </p>
+    </div>
+    <div class="fixed-footer">
+        <div class="container">
+            <div class="font3" style="font-size:1vw">
+                Tufts Animal Sanctuary, 200 Boston Ave Medford, Ma 02155
+            </div>
+        </div>
+        <div class="footer-logo">
+            <a href="https://instagram.com/adoptadog" target="_blank"><img src="ig.png" class="logo"></a>
+            <a href="https://twitter.com/adoptadog" target="_blank"><img src="tw.png" class="logo"></a>
+            <a href="https://facebook.com/adoptadog" target="_blank"><img src="fb.png" class="logo"></a>
+        <div class="logo">        
     </div>
 
 
