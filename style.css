@@ -1,0 +1,62 @@
+body {
+    background-color: lightblue; color: gold;
+}
+text {
+    cursor: text;
+}
+a:hover {
+    background-color: yellow;
+  }
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #560;
+    padding: 20px 0px;
+    z-index: 99;
+    font-family:"Copperplate", Helvetica, Georgia;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+    color: rgb(184, 214, 50);
+}    
+nav a{
+    color: rgb(192, 192, 35);
+    text-decoration: underline;
+    padding: 10px 40px;
+    display: inline-block;
+}
+.font1 {
+    font-family: "Helvetica", Arial;
+}
+.font2 {
+    font-family: "Georgia", Arial;
+}
+.font3 {
+    font-family: "Courier New", Arial;
+}
+.font4 {
+    font-family: "Papyrus", Arial;
+}
+
+.footer-logo{
+    float: right;
+    position: relative;
+}
+
+
+.logo{
+    height: 25px;
+    width:auto;
+    margin-right: 30px;
+    /* margin-top: 10px; */
+}
+
+.mainlogo{
+    float: left;
+    position: relative;
+    height: 60px;
+    width:auto;
+}
