@@ -21,13 +21,6 @@ a:hover {
 .fixed-header{
     top: 0;
 }
-.subhead {
-	background-color: lightslategray;
-	height: 100px;
-    line-height: 100px;
-    clear: both;
-    text-align: center;
-        }
 .fixed-footer{
     bottom: 0;
     color: rgb(184, 214, 50);
@@ -69,6 +62,7 @@ nav a{
     position: relative;
     height: 60px;
     width:auto;
+    margin-left: 20px;
 }
 .container{
     width: 90%;
