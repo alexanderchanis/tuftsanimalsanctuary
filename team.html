@@ -4,37 +4,14 @@
 <meta charset="utf-8">
 <title>Team</title>
 
+<link rel="stylesheet" href="style.css">
 <style type="text/css">
-        body {
-                margin: 0;
-        }
 	.header {
 		width: 100%;
 		background-color: red;
 		height: 170px;
 		float: left;
 	}
-	h1 {
-		font-size: 90px;
-		padding-left: 40px;
-	}
-	.navbar {
-		background-color: blue;
-		margin: 0;
-		padding: 0;
-	}
-	li.nav {
-		font-size: 40px;
-		padding: 20px;
-                float: right;
-	}
-        .subhead {
-		background-color: lightslategray;
-		height: 100px;
-                line-height: 100px;
-                clear: both;
-                text-align: center;
-        }
         h2 {
                 font-size: 50px;
         }
@@ -60,7 +37,12 @@
 		font-size: 30px;
 		line-height: 1.3em;
 		text-align: center;
+                color: black;
 	}
+        .block {
+                height: 129px;
+                visiblity: hidden;
+        }
         @media (max-width: 2000px) {
                 img {
                         height: 30%;
@@ -71,6 +53,7 @@
         		text-align: center;
         		font-size: 25px;
         		line-height: 1.3em;
+                        color: black;
         	}
         }
         @media (max-width: 1000px) {
@@ -83,24 +66,30 @@
         		text-align: center;
         		font-size: 18px;
         		line-height: 1.3em;
+                        color: black;
         	}
         }
 </style>
 </head>
 <body>		
-                <div style="background-color: blanchedalmond">
-		<div class="header">
-			<h1>Tufts Wildlife Sanctuary</h1>
-		</div>
-		<ul style="list-style-type: none; margin: 0; padding: 0;">
-	                <li class="nav">Link1</li>
-			<li class="nav">Link2</li>
-			<li class="nav">Link3</li>
-			<li class="nav">Link4</li>
-			<li class="nav">Link5</li>
-			<li class="nav">Link6</li>
-			<li class="nav">Link7</li>
-		</ul>
+        <div class="fixed-header">
+            <div style="font-size:20px"><h3>Tufts Animal Sanctuary</h3></div>
+            <a href="index.html"><img src="logo.png" class="mainlogo"></a>
+            <div class="container">
+                <nav style="font-size:18px">
+                    <a href="#">Home</a>
+                    <a href="#" target=”_blank”>Contact us</a>
+                    <a href="#" target=”_blank”>Mission Statement</a>
+                    <a href="#" target=”_blank”>Animals</a>
+                    <a href="#" target=”_blank”>Staff</a>
+                    <a href="#" target=”_blank”>Features</a>
+                    <a href="#" target=”_blank”>Testimonials</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="block"></div>
+        
                 <div class="subhead">
                         <h2>Meet The Team</h2>
                 </div>
@@ -126,6 +115,20 @@
 				are retaining their natural instincts, teaches them new tricks, and is ultimately the one who decides when they are ready to return to their homes.</td>
                         </tr>
                 </table>
+                
+                <div class="block"></div>
+                
+                <div class="fixed-footer">
+                    <div class="container">
+                        <div class="font3" style="font-size:1vw">
+                            Tufts Animal Sanctuary, 200 Boston Ave Medford, MA 02155
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="https://instagram.com/adoptadog" target="_blank"><img src="ig.png" class="logo"></a>
+                        <a href="https://twitter.com/adoptadog" target="_blank"><img src="tw.png" class="logo"></a>
+                        <a href="https://facebook.com/adoptadog" target="_blank"><img src="fb.png" class="logo"></a>
+                    <div class="logo">        
                 </div>
 </body>
 </html>
