@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Staff</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous">
+</script>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='main.js'></script>
+    <script>
+        images = ["n1.jpg", "n2.jpg", "n3.jpg"]
+        images2 = ["n4.jpg", "n5.jpg"]
+        currIndex = 0;
+        currIndex2 = 0;
+        function fadeinImg() {
+            // alert();
+            currIndex++;
+            // alert(currIndex)
+            currIndex = currIndex % images.length;
+            $("#slides img").attr("src", images[currIndex])
+            $("#slides img").fadeIn(3000, fadeoutImg);
+
+        }
+        function fadeinImg2() {
+            currIndex2++;
+            currIndex2 = currIndex2 % images2.length;
+            $("#slides2 img").attr("src", images2[currIndex2])
+            $("#slides2 img").fadeIn(4000, fadeoutImg2);
+        }
+        function fadeoutImg2 () {
+            $("#slides2 img").fadeOut(4000, fadeinImg2);
+        }
+        function fadeoutImg() {
+            $("#slides img").fadeOut(3000, fadeinImg);
+
+
+
+
+        }
+        $(document).ready(function() {
+            fadeoutImg();
+            fadeoutImg2();
+
+        })
+    </script>
+    <style>
+        img {
+            width: 10%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            /* height: 30%; */
+        }
+        #img1 {
+            width: 10%;
+            height: 10%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .leftbox {
+            float:left;
+            width:40%;
+            margin: 10px;
+            background: #d3d3d3;
+            border-radius: 7px;
+            padding: 40px 0px 40px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .rightbox {
+            float:right;
+            width:40%;
+            margin: 10px;
+            background: #d3d3d3;
+            border-radius: 7px;
+            padding: 40px 0px 20px 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .lefttext {
+            float:left;
+            width:40%;
+            margin: 10px;
+            background: rgb(143, 165, 47);
+            border-radius: 7px;
+            padding: 40px 0px 20px 0px;
+            border: solid 2px green;
+
+        }
+        .righttext {
+            float:right;
+            width:40%;
+            margin: 20px;
+            background: rgb(143, 165, 47);
+            border-radius: 7px;
+            padding: 10px 0px 0px 0px;
+            border: solid 1px green;
+        }
+        .hideright {
+            float:right;
+            width:20%;
+            height: 70px;
+            margin: 10px;
+            background: lightblue;
+            display: hidden;
+        }
+        .hideleft  {
+            float: left;
+            width:100%;
+            height:70px;
+            margin: 10px;
+            background: lightblue;
+            display: hidden;
+        }
+        h1 {
+            text-align: center;
+
+        }
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            color: yellow
+        }
+        img {
+            /* position: relative; */
+            width: 80%;
+        }
+        
+        p {
+            padding: 20px;
+            font-size: 18px;
+            color: yellow
+        }
+        @media (max-width: 600px){
+            div {
+                width: 100%; max-width: 500px;
+            }
+            .righttext {
+                width: 100%; max-width: 500px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            .lefttext {
+                width: 100%; max-width: 500px;
+                margin: auto;
+            }
+            .hideleft {
+                display: none
+            }
+            .hideright {
+                display: none
+            }
+            img {
+                display: none
+            }
+            #slides {
+                display: none
+            }
+            #slides2 {
+                display: none
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="fixed-header">
+            <div style="font-size:20px"><h3>Tufts Animal Sanctuary</h3></div>
+            <a href="index.html"><img src="logo.png" class="mainlogo"></a>
+            <div class="container">
+                <nav style="font-size:18px">
+                    <a href="#">Home</a>
+                    <a href="#" target=”_blank”>Contact us</a>
+                    <a href="#" target=”_blank”>Mission Statement</a>
+                    <a href="#" target=”_blank”>Animals</a>
+                    <a href="#" target=”_blank”>Staff</a>
+                    <a href="#" target=”_blank”>Features</a>
+                    <a href="#" target=”_blank”>Testimonials</a>
+                </nav>
+            </div>
+        </div>
+
+    <h1>Mission Statement</h1>
+    <div class = "hideright">
+    </div>
+    <div id = "slides" class = "leftbox" style="margin-top: 50px; margin: 10px 10px 10px 10px; background: lightblue" >
+        <img src="elephant2.jpg" style="height: 325px">
+    </div>
+
+    <div class = "righttext">
+        <h2 class = "font2">Our Goals</h2> 
+        <p class = "font4">At Tufts National Park, we strive to protect and preserve all species of animals. We would like to provide a habitat that radiates compassion. 
+            The animals at Tufts National Park range from zebra and elephants all the way to squirrels and rabbits. Keeping true to our roots, we have numerous
+            nature trails that you can walk along to see the vast greenery and wildlife.
+        <hr style = "margin: 0% 10% 0% 10%">
+        </p>
+    </div>
+
+    <div class = "hideleft">
+    </div>
+    <div class = "lefttext">
+        <h2 class = "font2">Our History</h2>
+        <p class = "font4">Tufts National Park started to try to preserve and showcase many of the world's animals. 
+            We founded the park 70 years ago in 1952. It was the first of its kind in the Sommerville area. 
+            We are proud to be one of the largest parks in the nation, committed to protecting and featuring 
+            a variety of animals.
+            <hr style = "margin: 0% 10% 0% 10%">
+
+        </p>
+    </div>
+    <div class = "hideright">
+        
+    </div>
+    <div id = "slides2" class = "rightbox" style="margin-top: 50px; margin: 10px 10px 10px 10px; background: lightblue">
+        <img src="n4.jpg">
+    </div>
+
+    <div class="fixed-footer">
+        <div class="container">
+            <div class="font3" style="font-size:1vw">
+                Tufts Animal Sanctuary, 200 Boston Ave Medford, Ma 02155
+            </div>
+        </div>
+        <div class="footer-logo">
+            <a href="https://instagram.com/adoptadog" target="_blank"><img src="ig.png" class="logo"></a>
+            <a href="https://twitter.com/adoptadog" target="_blank"><img src="tw.png" class="logo"></a>
+            <a href="https://facebook.com/adoptadog" target="_blank"><img src="fb.png" class="logo"></a>
+        <div class="logo">        
+    </div>
+
+    
+</body>
+</html>
