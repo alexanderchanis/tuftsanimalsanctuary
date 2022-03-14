@@ -1,9 +1,9 @@
-<<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Meet The Animals</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <style type="text/css">
         h2 {
@@ -50,7 +50,7 @@
                         color: black;
         	}
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 800px) {
                 img {
                         height: 15%;
                         width: 60%;
@@ -62,56 +62,95 @@
         		line-height: 1.3em;
                         color: black;
         	}
+                .subhead {
+                        width: 100%;
+                }
+                .subhead h1 {
+                        width: 100%;
+                        display: inline-block;
+                }
         }
 </style>
 </head>
-<body>		
-        <div class="fixed-header">
-            <div style="font-size:20px"><h3>Tufts Animal Sanctuary</h3></div>
+<body style="margin:0;padding:0;"!important>
+    <div class="fixed-header">
+            <div style="font-size:20px; margin-left: 20px"><h3>Tufts Animal Sanctuary</h3></div>
             <a href="index.html"><img src="logo.png" class="mainlogo"></a>
             <div class="container">
                 <nav style="font-size:18px">
-                <a href="index.html">Home</a>
+                    <a href="#">Home</a>
+                    <a href="#" target=”_blank”>Contact us</a>
+                    <a href="#" target=”_blank”>Mission Statement</a>
+                    <a href="#" target=”_blank”>Animals</a>
+                    <a href="#" target=”_blank”>Staff</a>
+                    <a href="#" target=”_blank”>Features</a>
+                    <a href="#" target=”_blank”>Testimonials</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="topnav">
+            <div class = "font2">
+                <a href="index.html" class="active">Tufts Animal Sanctuary</a>
+            </div>
+            <!-- <a href="index.html"><img src="logo.png" class="mainlogo"></a> -->
+            <div id="myLinks">
+                <!-- <a href="index.html">Home</a> -->
                 <a href="contact.html" target=”_blank”>Contact us</a>
                 <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
                 <a href="rescues.html" target=”_blank”>Animals</a>
                 <a href="team.html" target=”_blank”>Staff</a>
                 <a href="services.html" target=”_blank”>Features</a>
                 <a href="Testimonials.html" target=”_blank”>Testimonials</a>
-                </nav>
             </div>
-        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <div style="padding-left:16px">
+        </div>    
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
         
         <div class="block"></div>
         
                 <div class="subhead">
-                        <h2>Recent Rescues</h2>
+                        <h1 class="font1">Recent Rescues</h1>
                 </div>
                 <table>
                         <tr>
-                                <td class="img"><img src="images/bunny.jpg" alt="Bunny" width=100% height=100% border=3></img></td>
-                                <td class="img"><img src="images/jumbo.jpg" alt="Baby Elephant" width=100% height=100% border=3></img></td>
-                                <td class="img"><img src="images/squirrel.jpg" alt="Squirrel" width=100% height=100% border=3></img></td>
+                                <td class="img"><img src="bunny.jpg" alt="Bunny" width=100% height=100% border=3></img></td>
+                                <td class="img"><img src="jumbo.jpg" alt="Baby Elephant" width=100% height=100% border=3></img></td>
+                                <td class="img"><img src="squirrel.jpg" alt="Squirrel" width=100% height=100% border=3></img></td>
                         </tr>
                         <tr>
-                                <td class="imagetext">Charles is an American Fuzzy Lop that was rescued from our very own Tufts University campus after 
+                                <td class="imagetext font4">Charles is an American Fuzzy Lop that was rescued from our very own Tufts University campus after 
 				spraining his hind legs in a high speed bunny race.</td>
-                                <td class="imagetext">Eddie is a baby African bush elephant that was found one day underneath the Jumbo Statue on Tufts University Campus.
+                                <td class="imagetext font4">Eddie is a baby African bush elephant that was found one day underneath the Jumbo Statue on Tufts University Campus.
 				He is being taken care of until he is able to return to his home.</td>
-                                <td class="imagetext">Basil is an Eastern gray squirrel who lacks the ability to scale up trees. She is currently being trained
+                                <td class="imagetext font4">Basil is an Eastern gray squirrel who lacks the ability to scale up trees. She is currently being trained
 				everyday to learn this valuable skill!</td>
                         </tr>
                         <tr>
-                                <td class="img"><img src="images/zonkey.jpg" alt="Zonkey" width=100% height=100% border=3></img></td>
-                                <td class="img"><img src="images/uakari.jpg" alt="Uakari" width=100% height=100% border=3></img></td>
-                                <td class="img"><img src="images/tuna.png" alt="Tuna" width=100% height=100% border=3></img></td>
+                                <td class="img"><img src="zonkey.jpg" alt="Zonkey" width=100% height=100% border=3></img></td>
+                                <td class="img"><img src="uakari.jpg" alt="Uakari" width=100% height=100% border=3></img></td>
+                                <td class="img"><img src="tuna.png" alt="Tuna" width=100% height=100% border=3></img></td>
                         </tr>
                         <tr>
-                                <td class="imagetext">Clarence is a zeedonk, or zonkey, who has a neck strain after eating too much grass. Each day, he eats grass
+                                <td class="imagetext font4">Clarence is a zeedonk, or zonkey, who has a neck strain after eating too much grass. Each day, he eats grass
 				lower and lower towards the ground for recovery.</td>
-                                <td class="imagetext">Peanut is an uakari who currently does not have enough hair to stay warm during the nights. Until then, he is snuggled every night in
+                                <td class="imagetext font4">Peanut is an uakari who currently does not have enough hair to stay warm during the nights. Until then, he is snuggled every night in
 				blankets until he grows the necessary amount.</td>
-                                <td class="imagetext">Gilbert is a tuna who was found separated from his school of fellow tunas off the coast of Maine. He is currently being housed until his 
+                                <td class="imagetext font4">Gilbert is tuna who was found separated from his school of fellow tunas off the coast of Maine. He is currently being housed until his 
 				school is located</td>
                         </tr>
                 </table>
