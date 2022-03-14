@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Team</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <style type="text/css">
 	.header {
@@ -12,9 +13,6 @@
 		height: 170px;
 		float: left;
 	}
-        h2 {
-                font-size: 50px;
-        }
 	table {
                 clear: both;
                 position: block;
@@ -56,7 +54,7 @@
                         color: black;
         	}
         }
-        @media (max-width: 1000px) {
+        @media (max-width: 800px) {
                 img {
                         height: 15%;
                         width: 60%;
@@ -68,50 +66,90 @@
         		line-height: 1.3em;
                         color: black;
         	}
+                .subhead {
+                        width: 100%;
+                }
+                .subhead h1 {
+                        width: 100%;
+                        display: inline-block;
+                }
         }
 </style>
 </head>
-<body>		
-        <div class="fixed-header">
-            <div style="font-size:20px"><h3>Tufts Animal Sanctuary</h3></div>
+<body style="margin:0;padding:0;"!important>
+    <div class="fixed-header">
+            <div style="font-size:20px; margin-left: 20px"><h3>Tufts Animal Sanctuary</h3></div>
             <a href="index.html"><img src="logo.png" class="mainlogo"></a>
             <div class="container">
                 <nav style="font-size:18px">
-                <a href="index.html">Home</a>
+                    <a href="#">Home</a>
+                    <a href="contact.html" target=”_blank”>Contact us</a>
+                    <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
+                    <a href="rescues.html" target=”_blank”>Animals</a>
+                    <a href="team.html" target=”_blank”>Staff</a>
+                    <a href="services.html" target=”_blank”>Features</a>
+                    <a href="Testimonials.html" target=”_blank”>Testimonials</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="topnav">
+            <div class = "font2">
+                <a href="index.html" class="active">Tufts Animal Sanctuary</a>
+            </div>
+            <!-- <a href="index.html"><img src="logo.png" class="mainlogo"></a> -->
+            <div id="myLinks">
+                <!-- <a href="index.html">Home</a> -->
                 <a href="contact.html" target=”_blank”>Contact us</a>
                 <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
                 <a href="rescues.html" target=”_blank”>Animals</a>
                 <a href="team.html" target=”_blank”>Staff</a>
                 <a href="services.html" target=”_blank”>Features</a>
                 <a href="Testimonials.html" target=”_blank”>Testimonials</a>
-                </nav>
             </div>
-        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <div style="padding-left:16px">
+        </div>    
         
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+            
         <div class="block"></div>
         
                 <div class="subhead">
-                        <h2>Meet The Team</h2>
+                        <h1 class="font1">Meet The Team</h1>
                 </div>
                 <table>
                         <tr>
-                                <td class="img"><img src="images/bunny.jpg" alt="Bunny" width=90% height=90% border=3></img></td>
-                                <td class="img"><img src="images/jumbo.jpg" alt="Baby Elephant" width=90% height=90% border=3></img></td>
+                                <td class="img"><img src="bunny.jpg" alt="Bunny" width=90% height=90% border=3></img></td>
+                                <td class="img"><img src="jumbo.jpg" alt="Baby Elephant" width=90% height=90% border=3></img></td>
                         </tr>
                         <tr>
-                                <td class="imagetext"><strong>Alexander - </strong>Veterinarian<br>Alexander joined us in 1995 as a caretaker for the rescued animals. Today, he is
+                                <td class="imagetext font4"><strong>Alexander - </strong>Veterinarian<br>Alexander joined us in 1995 as a caretaker for the rescued animals. Today, he is
 				checking in with all of the animals daily, monitoring their progress, and applying all of the various treatments that the rescues require.</td>
-                                <td class="imagetext"><strong>Nat - </strong>Marine Biologist<br>Nat has been handling all of the needs of aquatic rescues since 1993. You can find him
+                                <td class="imagetext font4"><strong>Nat - </strong>Marine Biologist<br>Nat has been handling all of the needs of aquatic rescues since 1993. You can find him
 				swimming side by side with the fish, keeping their enviornment clean, and rescuing marine wildlife.</td>
                         </tr>
                         <tr>
-                                <td class="img"><img src="images/ZONKEY.jpg" alt="Zonkey" width=90% height=90% border=3></img></td>
-                                <td class="img"><img src="images/uakari.jpg" alt="Uakari" width=90% height=90% border=3></img></td>
+                                <td class="img"><img src="ZONKEY.jpg" alt="Zonkey" width=90% height=90% border=3></img></td>
+                                <td class="img"><img src="uakari.jpg" alt="Uakari" width=90% height=90% border=3></img></td>
                         </tr>
                         <tr>
-                                <td class="imagetext"><strong>Angus - </strong>Wildland Firefighter<br>Angus is the leader of all grounds maintenance and protection. Having joined the sanctuary
+                                <td class="imagetext font4"><strong>Angus - </strong>Wildland Firefighter<br>Angus is the leader of all grounds maintenance and protection. Having joined the sanctuary
 				in 1997, he has since been preventing wildfires, maintaining the habitats of the animals, and overall ensuring that all recues will have a pleasant stay at the sanctuary.</td>
-                                <td class="imagetext"><strong>Aidan - </strong>Animal Trainer<br>Aidan joined the team in 1994. He regularly checks in with the rescued animals to make sure that they
+                                <td class="imagetext font4"><strong>Aidan - </strong>Animal Trainer<br>Aidan joined the team in 1994. He regularly checks in with the rescued animals to make sure that they
 				are retaining their natural instincts, teaches them new tricks, and is ultimately the one who decides when they are ready to return to their homes.</td>
                         </tr>
                 </table>
