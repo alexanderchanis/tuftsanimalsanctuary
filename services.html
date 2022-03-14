@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32%;
+  padding: 10px;
+  background-color:rgb(143, 165, 47);
+  margin-right: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.img-responsive {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {width: 100%; float: left; margin-bottom:20px;}
+
+}
+
+
+</style>
+</head>
+<body style="margin:0;padding:0;">
+
+  <div class="fixed-header">
+    <div style="font-size:20px"><h3>Tufts Animal Sanctuary</h3></div>
+    <a href="index.html"><img src="logo.png" class="mainlogo"></a>
+    <div class="container">
+        <nav style="font-size:18px">
+            <a href="#">Home</a>
+            <a href="#" target=”_blank”>Contact us</a>
+            <a href="#" target=”_blank”>Mission Statement</a>
+            <a href="#" target=”_blank”>Animals</a>
+            <a href="#" target=”_blank”>Staff</a>
+            <a href="#" target=”_blank”>Features</a>
+            <a href="#" target=”_blank”>Testimonials</a>
+        </nav>
+    </div>
+</div>
+  
+
+<div class="topnav">
+  <div class = "font2">
+      <a href="index.html" class="active">Home</a>
+  </div>
+  <!-- <a href="index.html"><img src="logo.png" class="mainlogo"></a> -->
+  <div id="myLinks">
+      <!-- <a href="index.html">Home</a> -->
+      <a href="contact.html" target=”_blank”>Contact us</a>
+      <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
+      <a href="rescues.html" target=”_blank”>Animals</a>
+      <a href="team.html" target=”_blank”>Staff</a>
+      <a href="services.html" target=”_blank”>Features</a>
+      <a href="Testimonials.html" target=”_blank”>Testimonials</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+<div style="padding-left:16px">
+</div>
+
+<div class="row" style = "padding-bottom: 100px;">
+  <div class = "block" style = "height: 140px"></div>
+  <div class = "subhead">
+    <h1 class = "font1">Sanctuary Features</h1>
+  </div>
+  <div class="column">
+    <h2 class = "font2">Park Tour</h2>
+    <p class = "font4">Connect with animals by going on a tour of the park. This tour will take you outside the confines of our extensive trail system as you get to visit the rest of the sanctuary in an open-air vehicle that allows visitors to interact with certain animals. </p>
+    <img id="img" src="nam-anh-QJbyG6O0ick-unsplash.jpg" class="img-responsive img-rounded">
+    <h2 class = "font2">Hours</h2>
+    <p class = "font4"><strong>Mon-Fri <br/></strong>9am-2pm</p>
+    <p class = "font4"><strong>Sat & Sun <br/></strong>9am-5pm</p>
+    <p class = "font4">Register for a tour by visiting our <a href="contact.html" style = "text-decoration: none">contact</a> page and filling out the form. Our tours may fill up, and it is recommended to sign up far in advance so that you don't miss out on our wonderful animal tour! Depending on the day, limited seating might be available on a tour, and in that case our policy is first come, first serve. We hope you enjoy your visit to Tufts Animal Sanctuary and hope you sign up for the park tour!</p>
+    
+  </div>
+  <div class="column">
+    <h2 class = "font2">Trails</h2>
+    <p class = "font4">Explore over 5 miles of trails at Tufts Animal Sanctuary. Discover the far reaches of our trail systems and visit our different animals across the park. </p>
+    <img id="img" src="kayla-duhon-zsqF_j9ZHXw-unsplash.jpg" class="img-responsive img-rounded">
+    <h2 class = "font2">Bridge Trail</h2>
+    <p class = "font4"><Strong>Length: </Strong>0.6 miles</p>
+    <p class = "font4"><Strong>Details: </Strong>The Bridge Trail takes you through Uakari exhibit, as well as visits Zonkeys, and while on the bridge that the trail is named after you should be able to see the lions off in the distance.</p>
+
+    <h2 class = "font2">Heartwood Trail</h2>
+    <p class = "font4"><Strong>Length: </Strong>1.1 miles</p>
+    <p class = "font4"><Strong>Details: </Strong>The Heartwood Trail branches off from the Bridge Trail, and visits the squirrels and tuna. Most of the Heartwood Trail is not near the animals, but instead takes visitors through our beautiful forest, and passes by a river before eventually connecting with the Jumbo Trail.</p>
+
+    <h2 class = "font2">Jumbo Trail</h2>
+    <p class = "font4"><Strong>Length: </Strong>0.8 miles</p>
+    <p class = "font4"><Strong>Details: </Strong>The Jumbo Trail takes visitors through the Elephant exhibit, and also goes by the rabbits. The elephants are the main attraction of the Jumbo trail, and if you are lucky enough to visit during feeding hours, you might even get to help feed an elephant!</p>
+
+
+  </div>
+  <div class="column" style = "margin-right: 0%">
+    <h2 class = "font2">Snack Shack</h2>
+    <p class = "font4">Stop by our snack shack to grab a bite to eat inbetween visiting our wonderul animals! Whether you're looking for just a snack or a full meal, we have exactly what you need to keep you fueled up for the rest of the day! See below for our hours of operation.</p>
+    <img id="img" src="meritt-thomas-IyQii8ancVQ-unsplash.jpg" class="img-responsive img-rounded">
+    <h2 class = "font2">Hours</h2>
+    <p class = "font4"><strong>Mon-Fri <br/></strong>8am-4pm</p>
+    <p class = "font4"><strong>Sat & Sun <br/></strong>8am-6pm</p>
+    <p class = "font4">The snack shack is located to the right of the main entrance and is visible immediately once you enter the park. Visitors are given a $5 voucher towards the snack shack with admission. </p>
+    
+ 
+  </div>
+</div>
+<div class="fixed-footer">
+  <div class="container">
+      <div class="font3" style="font-size:1vw">
+          Tufts Animal Sanctuary, 200 Boston Ave Medford, Ma 02155
+      </div>
+  </div>
+  <div class="footer-logo">
+      <a href="https://instagram.com/adoptadog" target="_blank"><img src="ig.png" class="logo"></a>
+      <a href="https://twitter.com/adoptadog" target="_blank"><img src="tw.png" class="logo"></a>
+      <a href="https://facebook.com/adoptadog" target="_blank"><img src="fb.png" class="logo"></a>
+  <div class="logo">        
+</div>
+</body>
+</html>

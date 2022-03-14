@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="description" content="Animal Sanctuary">
+<meta name="keywords" content="Animal, wildlife, park">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Garamond, Arial, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #39c740;
+  color: white;
+}
+
+input[type=reset] {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #0609c5;
+  color: white;
+}
+
+.container1 {
+  border-radius: 10px;
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.column {
+  padding: 20px;
+  width: 50%;
+  float: left;
+}
+
+p {
+  color: black;
+  text-indent: 30px;
+ }
+
+.img-responsive {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {width: 100%; float: left}
+}
+
+</style>
+</head>
+<body style="margin:0;padding:0;">
+
+  <div class="fixed-header">
+    <div style="font-size:20px"><h3>Tufts Animal Sanctuary</h3></div>
+    <a href="index.html"><img src="logo.png" class="mainlogo"></a>
+    <div class="container">
+        <nav style="font-size:18px">
+            <a href="#">Home</a>
+            <a href="#" target=”_blank”>Contact us</a>
+            <a href="#" target=”_blank”>Mission Statement</a>
+            <a href="#" target=”_blank”>Animals</a>
+            <a href="#" target=”_blank”>Staff</a>
+            <a href="#" target=”_blank”>Features</a>
+            <a href="#" target=”_blank”>Testimonials</a>
+        </nav>
+    </div>
+</div>
+
+<div class="topnav">
+  <div class = "font2">
+      <a href="index.html" class="active">Home</a>
+  </div>
+  <!-- <a href="index.html"><img src="logo.png" class="mainlogo"></a> -->
+  <div id="myLinks">
+      <!-- <a href="index.html">Home</a> -->
+      <a href="contact.html" target=”_blank”>Contact us</a>
+      <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
+      <a href="rescues.html" target=”_blank”>Animals</a>
+      <a href="team.html" target=”_blank”>Staff</a>
+      <a href="services.html" target=”_blank”>Features</a>
+      <a href="Testimonials.html" target=”_blank”>Testimonials</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+<div style="padding-left:16px">
+</div>
+
+<div class="container1" style = "padding-bottom: 100px">
+  <div class = "block" style = "height: 140px"></div>
+  <div class = "subhead">
+    <h1 class = "font1">Contact Form</h1>
+  </div>
+  <div class="column" style="background-color:rgb(143, 165, 47);">
+  <form 
+  onsubmit="return runProgram()" 
+  name = "data"
+  method="post">
+    <label for="fname">First Name: *</label>
+    <br>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+    <br>
+    <label for="lname">Last Name: *</label>
+    <br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+    <br>
+    <label for="email">Email address *</label>
+    <br>
+    <input type="text" id="email" name="email" placeholder="Your email...">
+    <br>
+    <label for="phone">Phone number</label>
+    <br>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number...">
+    <br>
+
+    <label for="reason">Reason For Contact</label>
+    <br>
+    <select id="reason" name="reason">
+        <option value>Select:</option>
+        <option value="r1">Volunteering</option>
+        <option value="r2">Questions</option>
+        <option value="r3">Complaint</option>
+        <option value="r4">Comments</option>
+        <option value="r5">Park Tour</option>
+        <option value="other">Other</option>
+        
+    </select>
+    <br>
+    <label for="subject">Subject: *</label>
+    <br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+  </form>
+  </div>
+  <div class="column">
+    <h2 class = "font2">We'd Love To Hear From You</h2>
+    <p class = "font4">Whether you're interested in volunteering, you have a question about the part, or you have a complain to share, we'd be thrilled to hear your feedback. Here at Tufts Animal Sanctuary, we greatly appreciate any and all feedback. No concern is too small so please leave your email and a small description of your reason for contacting us and we will be sure to get back to you as soon as possible. Have a great day!</p>
+    <img id="img" src="taylor-gregory-HMGgqhE98eU-unsplash.jpg" class="img-responsive img-rounded">
+  </div>
+</div>
+
+<script>
+	
+	factors1 = [];
+	factors2 = [];
+	numbers = [];
+
+	function runProgram() {
+		
+		if (document.data.firstname.value == "")	{			
+		alert("Please enter your first name");		
+		document.data.firstname.focus();				
+		document.data.firstname.select();				
+		return false;								
+	} else if (document.data.lastname.value == "") {					
+		alert("Please enter your last name");	
+		document.data.lastname.focus();				
+		document.data.lastname.select();				
+		return false;									
+	} else if (document.data.email.value == "") {			
+		alert("Please enter your email");		
+		document.data.email.focus();				
+		document.data.email.select();				
+		return false;									
+	} else if (document.data.reason.value == "") {			
+		alert("Please select a reason for contact");	
+		return false;									
+	} else if (document.data.subject.value == "") {				
+		alert("Please enter your comment");		
+		document.data.subject.focus();				
+		document.data.subject.select();				
+		return false;									
+	}
+		return true;
+	}
+  </script>
+<div class="fixed-footer">
+  <div class="container">
+      <div class="font3" style="font-size:1vw">
+          Tufts Animal Sanctuary, 200 Boston Ave Medford, Ma 02155
+      </div>
+  </div>
+  <div class="footer-logo">
+      <a href="https://instagram.com/adoptadog" target="_blank"><img src="ig.png" class="logo"></a>
+      <a href="https://twitter.com/adoptadog" target="_blank"><img src="tw.png" class="logo"></a>
+      <a href="https://facebook.com/adoptadog" target="_blank"><img src="fb.png" class="logo"></a>
+  <div class="logo">        
+</div>
+</body>
+</html>
