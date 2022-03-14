@@ -5,6 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Mission Statement</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name = "keyword" content = "animals, sanctuary, park, animal sanctuary, save animals, trails, nature trails, uakari,
+    tuna, squirrel, elephant, rabbit, zonkey, zebra, lion, tufts, wildlife, tour, park tour, snack shack, snacks">
     <script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -12,7 +14,6 @@
 </script>
     <link type="text/css" href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
     <script src='main.js'></script>
     <script>
         images = ["n1.jpg", "n2.jpg", "n3.jpg"]
@@ -20,9 +21,7 @@
         currIndex = 0;
         currIndex2 = 0;
         function fadeinImg() {
-            // alert();
             currIndex++;
-            // alert(currIndex)
             currIndex = currIndex % images.length;
             $("#slides img").attr("src", images[currIndex])
             $("#slides img").fadeIn(3000, fadeoutImg);
@@ -39,10 +38,6 @@
         }
         function fadeoutImg() {
             $("#slides img").fadeOut(3000, fadeinImg);
-
-
-
-
         }
         $(document).ready(function() {
             fadeoutImg();
@@ -54,7 +49,6 @@
             width: 10%;
             border: 1px solid #ddd;
             border-radius: 4px;
-            /* height: 30%; */
         }
         #img1 {
             width: 10%;
@@ -130,7 +124,6 @@
             color: yellow
         }
         img {
-            /* position: relative; */
             width: 80%;
         }
         
@@ -147,17 +140,14 @@
 
             div {
                 width: 100%;
-                /* width: 100%; max-width: 500px; */
             }
             .righttext {
                 width: 100%;
-                /* width: 100%; max-width: 500px; */
                 margin: auto;
                 margin-bottom: 10px;
             }
             .lefttext {
                 width: 100%;
-                /* width: 100%; max-width: 500px; */
                 margin: auto;
             }
             .hideleft {
@@ -199,9 +189,7 @@
             <div class = "font2">
                 <a href="index.html" class="active">Tufts Animal Sanctuary</a>
             </div>
-            <!-- <a href="index.html"><img src="logo.png" class="mainlogo"></a> -->
             <div id="myLinks">
-                <!-- <a href="index.html">Home</a> -->
                 <a href="contact.html" target=”_blank”>Contact us</a>
                 <a href="MissionStatement.html" target=”_blank”>Mission Statement</a>
                 <a href="rescues.html" target=”_blank”>Animals</a>
